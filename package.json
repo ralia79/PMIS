@@ -1,0 +1,13 @@
+{
+    "name": "PMIS",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass": "node-sass -o style scss/main.scss -w"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
