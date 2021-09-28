@@ -25,3 +25,150 @@
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/Roboto-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype"); }
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }
+
+body {
+  background-color: #fff;
+  font-family: "Nunito Regular";
+  font-size: 19px; }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #C0C0C0;
+  padding-bottom: 20px; }
+
+.header {
+  padding-top: 5px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .header-left-search {
+      outline: none;
+      border: none;
+      padding-left: 10px; }
+    .header-left-search::placeholder {
+      color: #C0C0C0; }
+    .header-left span {
+      font-size: 15px;
+      color: #C0C0C0;
+      cursor: pointer; }
+  .header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }
+    .header-right-dot {
+      width: 7px;
+      height: 7px;
+      background-color: #D32F2F;
+      border-radius: 50%;
+      position: absolute;
+      margin: 0 50px 0 0; }
+    .header-right span {
+      font-size: 30px;
+      margin: 0 10px;
+      cursor: pointer;
+      color: #C0C0C0; }
+    .header-right-prof {
+      width: 30px !important;
+      height: 30px !important;
+      border-radius: 50%;
+      margin-left: 10px; }
+  .header .left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px; }
+    .header .left-discrption {
+      margin-left: 60px; }
+      .header .left-discrption-item {
+        margin-right: 20px; }
+        .header .left-discrption-item h5 {
+          font-size: 14px;
+          color: #C0C0C0;
+          margin-bottom: 0; }
+        .header .left-discrption-item p {
+          color: #C0C0C0;
+          color: #A8A8A8; }
+    .header .left-username {
+      flex-direction: row; }
+      .header .left-username span {
+        font-size: 30px;
+        margin-top: 5px;
+        margin-left: 20px;
+        color: #FBC743; }
+      .header .left-username-h2 {
+        color: #565656;
+        font-family: 'Roboto';
+        font-weight: 400px; }
+    .header .left img {
+      width: 100px;
+      height: 100px; }
+  .header .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }
+    .header .right-items {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row; }
+      .header .right-items .bookmark {
+        background-color: #2196F3;
+        color: #fff;
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+        border-radius: 50%;
+        margin-left: 5px; }
+      .header .right-items .heart {
+        background-color: #689F38;
+        color: #fff;
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+        border-radius: 50%;
+        margin-left: 5px; }
+      .header .right-items .menu {
+        background-color: #9C27B0;
+        color: #fff;
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+        border-radius: 50%;
+        margin-left: 5px; }

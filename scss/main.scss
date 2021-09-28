@@ -1,1 +1,180 @@
+// start project
 @import 'font.scss';
+@import 'responsive.scss';
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+// colors
+$title-color: #565656;
+$caption-color: #C0C0C0;
+$dark-blue :#2196F3;
+$blue: #B8DEFB;
+$dark-green :#689F38;
+$green :#9FD4A2;
+$Purple: #9C27B0;
+$orange :#F57C00;
+$red :#D32F2F;
+$gray: #A8A8A8;
+$white: #fff;
+// start header
+body {
+    background-color: #fff;
+    font-family: "Nunito Regular";
+    font-size: 19px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid $caption-color;
+    padding-bottom: 20px;
+}
+
+.header {
+    padding-top: 5px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &-left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &-search {
+            outline: none;
+            border: none;
+            padding-left: 10px;
+        }
+        &-search::placeholder {
+            color: $caption-color;
+        }
+        span {
+            font-size: 15px;
+            color: $caption-color;
+            cursor: pointer;
+        }
+    }
+    &-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        &-dot {
+            width: 7px;
+            height: 7px;
+            background-color: $red;
+            border-radius: 50%;
+            position: absolute;
+            margin: 0 50px 0 0;
+        }
+        span {
+            font-size: 30px;
+            margin: 0 10px;
+            cursor: pointer;
+            color: $caption-color;
+        }
+        &-prof {
+            width: 30px !important;
+            height: 30px !important;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+    }
+    .left {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 10px;
+        &-discrption {
+            margin-left: 60px;
+            &-item {
+                margin-right: 20px;
+                h5 {
+                    font-size: 14px;
+                    color: $caption-color;
+                    margin-bottom: 0;
+                }
+                p {
+                    color: $caption-color;
+                    color: $gray;
+                }
+            }
+        }
+        &-username {
+            flex-direction: row;
+            span {
+                font-size: 30px;
+                margin-top: 5px;
+                margin-left: 20px;
+                color: #FBC743;
+            }
+            &-h2 {
+                color: $title-color;
+                font-family: 'Roboto';
+                font-weight: 400px;
+            }
+        }
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        &-items {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            .bookmark {
+                background-color: $dark-blue;
+                color: $white;
+                width: 35px;
+                height: 35px;
+                padding: 5px;
+                border-radius: 50%;
+                margin-left: 5px;
+            }
+            .heart {
+                background-color: $dark-green;
+                color: $white;
+                width: 35px;
+                height: 35px;
+                padding: 5px;
+                border-radius: 50%;
+                margin-left: 5px;
+            }
+            .menu {
+                background-color: $Purple;
+                color: $white;
+                width: 35px;
+                height: 35px;
+                padding: 5px;
+                border-radius: 50%;
+                margin-left: 5px;
+            }
+        }
+    }
+}
