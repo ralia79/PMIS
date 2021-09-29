@@ -38,11 +38,12 @@ $gray: #A8A8A8;
 $white: #fff;
 // start header
 body {
-    background-color: #fff;
+    background-color: #F8F9FA;
     font-family: "Nunito Regular" !important;
     font-size: 19px;
 }
 
+// start header
 .navbar {
     display: flex;
     flex-direction: row;
@@ -52,8 +53,8 @@ body {
 }
 
 .header {
+    background-color: #fff;
     padding-top: 5px;
-    height: 200px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -109,7 +110,6 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        align-items: center;
         padding-top: 10px;
         &-discrption {
             display: flex;
@@ -129,6 +129,7 @@ body {
             }
         }
         &-username {
+            margin-bottom: 20px;
             flex-direction: row;
             span {
                 font-size: 30px;
@@ -188,3 +189,76 @@ body {
         }
     }
 }
+
+// End header
+// start Base section
+section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+// start section 1
+.section1 {
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    margin-top: 20px;
+    .spacial-gray {
+        color: $title-color;
+        font-size: 21px;
+    }
+    &-items {
+        display: flex;
+        margin: 5px;
+        justify-content: center;
+        margin-bottom: 10px !important;
+    }
+    &-item {
+        box-shadow: 1px 1px 10px $caption-color;
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        &-h3 {
+            color: $caption-color;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        &-p {
+            color: $caption-color;
+            span {
+                color: $dark-green;
+            }
+        }
+        &-iconwrapper {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: $blue;
+            border-radius: 3px;
+            margin: 23px 0 0 -25px;
+            span {
+                color: $dark-blue;
+                font-size: 24px;
+            }
+            &-2 {
+                background-color: #FDE0C2 !important;
+                span {
+                    color: $orange !important;
+                }
+            }
+            &-4 {
+                background-color: #E7CBEC !important;
+                span {
+                    color: $Purple !important;
+                }
+            }
+        }
+    }
+}
+
+// End section1
+// Start section 2
+.section2 {}

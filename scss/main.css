@@ -138,7 +138,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #F8F9FA;
   font-family: "Nunito Regular" !important;
   font-size: 19px;
 }
@@ -159,8 +159,8 @@ body {
 }
 
 .header {
+  background-color: #fff;
   padding-top: 5px;
-  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,9 +267,6 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-top: 10px;
 }
 
@@ -300,6 +297,7 @@ body {
 }
 
 .header .left-username {
+  margin-bottom: 20px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -379,5 +377,99 @@ body {
   border-radius: 50%;
   margin-left: 5px;
   cursor: pointer;
+}
+
+section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.section1 {
+  margin-top: 20px;
+}
+
+.section1 .spacial-gray {
+  color: #565656;
+  font-size: 21px;
+}
+
+.section1-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px !important;
+}
+
+.section1-item {
+  -webkit-box-shadow: 1px 1px 10px #C0C0C0;
+          box-shadow: 1px 1px 10px #C0C0C0;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.section1-item-h3 {
+  color: #C0C0C0;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.section1-item-p {
+  color: #C0C0C0;
+}
+
+.section1-item-p span {
+  color: #689F38;
+}
+
+.section1-item-iconwrapper {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #B8DEFB;
+  border-radius: 3px;
+  margin: 23px 0 0 -25px;
+}
+
+.section1-item-iconwrapper span {
+  color: #2196F3;
+  font-size: 24px;
+}
+
+.section1-item-iconwrapper-2 {
+  background-color: #FDE0C2 !important;
+}
+
+.section1-item-iconwrapper-2 span {
+  color: #F57C00 !important;
+}
+
+.section1-item-iconwrapper-4 {
+  background-color: #E7CBEC !important;
+}
+
+.section1-item-iconwrapper-4 span {
+  color: #9C27B0 !important;
 }
 /*# sourceMappingURL=main.css.map */
