@@ -1,6 +1,6 @@
 // start project
-@import 'font.scss';
 @import 'responsive.scss';
+@import 'font.scss';
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -39,7 +39,7 @@ $white: #fff;
 // start header
 body {
     background-color: #fff;
-    font-family: "Nunito Regular";
+    font-family: "Nunito Regular" !important;
     font-size: 19px;
 }
 
@@ -79,6 +79,8 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        padding-right: 0;
+        margin-right: 0!important;
         &-dot {
             width: 7px;
             height: 7px;
@@ -94,11 +96,14 @@ body {
             color: $caption-color;
         }
         &-prof {
-            width: 30px !important;
-            height: 30px !important;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
             margin-left: 10px;
         }
+    }
+    .profil-info {
+        margin-top: 20px;
     }
     .left {
         display: flex;
@@ -107,6 +112,8 @@ body {
         align-items: center;
         padding-top: 10px;
         &-discrption {
+            display: flex;
+            flex-direction: column;
             margin-left: 60px;
             &-item {
                 margin-right: 20px;
@@ -145,7 +152,7 @@ body {
         flex-direction: row;
         justify-content: flex-end;
         &-items {
-            margin-top: 30px;
+            margin-top: 20px;
             display: flex;
             flex-direction: row;
             .bookmark {
@@ -156,6 +163,7 @@ body {
                 padding: 5px;
                 border-radius: 50%;
                 margin-left: 5px;
+                cursor: pointer;
             }
             .heart {
                 background-color: $dark-green;
@@ -165,6 +173,7 @@ body {
                 padding: 5px;
                 border-radius: 50%;
                 margin-left: 5px;
+                cursor: pointer;
             }
             .menu {
                 background-color: $Purple;
@@ -174,6 +183,7 @@ body {
                 padding: 5px;
                 border-radius: 50%;
                 margin-left: 5px;
+                cursor: pointer;
             }
         }
     }

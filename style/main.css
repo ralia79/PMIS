@@ -1,3 +1,55 @@
+@media (max-width: 576px) {
+  .left {
+    justify-content: center !important;
+    padding-top: 30px !important; } }
+
+@media (max-width: 768px) {
+  .header-right span {
+    margin: 0 !important;
+    font-size: 20px !important; }
+  .header-right-prof {
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 !important; }
+  .header-right-dot {
+    width: 5px !important;
+    height: 5px !important;
+    margin: 0 22px 0 0 !important; }
+  .bookmark {
+    width: 25px !important;
+    height: 25px !important;
+    padding: 5px !important;
+    font-size: 16px !important; }
+  .heart {
+    width: 25px !important;
+    height: 25px !important;
+    padding: 5px !important;
+    font-size: 16px !important; }
+  .menu {
+    width: 25px !important;
+    height: 25px !important;
+    padding: 5px !important;
+    font-size: 16px !important; } }
+
+@media (max-width: 992px) {
+  .left-image {
+    width: 70px !important;
+    height: 70px !important; }
+  .left-username-h2 {
+    font-size: 20px !important; }
+  .left-username span {
+    font-size: 22px !important;
+    margin-top: 2px !important;
+    margin-left: 7px !important; }
+  .left-discrption {
+    margin-left: 30px !important; }
+    .left-discrption-item {
+      margin-right: 10px !important; }
+      .left-discrption-item h5 {
+        font-size: 10px !important; }
+      .left-discrption-item p {
+        font-size: 10px !important; } }
+
 @font-face {
   font-family: 'Nunito Regular';
   src: url("../fonts/Nunito-Regular.ttf") format("truetype"); }
@@ -58,7 +110,7 @@
 
 body {
   background-color: #fff;
-  font-family: "Nunito Regular";
+  font-family: "Nunito Regular" !important;
   font-size: 19px; }
 
 .navbar {
@@ -91,7 +143,9 @@ body {
   .header-right {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    padding-right: 0;
+    margin-right: 0 !important; }
     .header-right-dot {
       width: 7px;
       height: 7px;
@@ -105,10 +159,12 @@ body {
       cursor: pointer;
       color: #C0C0C0; }
     .header-right-prof {
-      width: 30px !important;
-      height: 30px !important;
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
       margin-left: 10px; }
+  .header .profil-info {
+    margin-top: 20px; }
   .header .left {
     display: flex;
     flex-direction: row;
@@ -116,6 +172,8 @@ body {
     align-items: center;
     padding-top: 10px; }
     .header .left-discrption {
+      display: flex;
+      flex-direction: column;
       margin-left: 60px; }
       .header .left-discrption-item {
         margin-right: 20px; }
@@ -145,7 +203,7 @@ body {
     flex-direction: row;
     justify-content: flex-end; }
     .header .right-items {
-      margin-top: 30px;
+      margin-top: 20px;
       display: flex;
       flex-direction: row; }
       .header .right-items .bookmark {
@@ -155,7 +213,8 @@ body {
         height: 35px;
         padding: 5px;
         border-radius: 50%;
-        margin-left: 5px; }
+        margin-left: 5px;
+        cursor: pointer; }
       .header .right-items .heart {
         background-color: #689F38;
         color: #fff;
@@ -163,7 +222,8 @@ body {
         height: 35px;
         padding: 5px;
         border-radius: 50%;
-        margin-left: 5px; }
+        margin-left: 5px;
+        cursor: pointer; }
       .header .right-items .menu {
         background-color: #9C27B0;
         color: #fff;
@@ -171,4 +231,5 @@ body {
         height: 35px;
         padding: 5px;
         border-radius: 50%;
-        margin-left: 5px; }
+        margin-left: 5px;
+        cursor: pointer; }
