@@ -26,7 +26,7 @@
 
 // colors
 $title-color: #565656;
-$caption-color: #C0C0C0;
+$caption-color: #b1b0b0;
 $dark-blue :#2196F3;
 $blue: #B8DEFB;
 $dark-green :#689F38;
@@ -192,9 +192,8 @@ body {
 
 // End header
 // start Base section
-section {
-    padding-top: 30px;
-    padding-bottom: 30px;
+.section1 {
+    padding-top: 10px;
 }
 
 // start section 1
@@ -214,7 +213,8 @@ section {
         margin-bottom: 10px !important;
     }
     &-item {
-        box-shadow: 1px 1px 10px $caption-color;
+        background-color: $white;
+        box-shadow: 1px 1px 5px $caption-color;
         width: 95%;
         display: flex;
         flex-direction: row;
@@ -261,4 +261,73 @@ section {
 
 // End section1
 // Start section 2
-.section2 {}
+.section2 {
+    &-wrapper {
+        box-shadow: 1px 1px 5px $caption-color;
+        width: 98%;
+        padding: 20px;
+        margin-left: 6px;
+        margin-top: 10px;
+        background-color: $white;
+    }
+    &-right {
+        &-h3 {
+            padding: 10px 0 15px 0 !important;
+            color: $title-color;
+            font-family: 'Roboto';
+            font-size: 20px;
+            font-weight: 400 !important;
+        }
+    }
+    &-left {
+        &-h3 {
+            padding: 10px 0 15px 0 !important;
+            color: $title-color;
+            font-family: 'Roboto';
+            font-size: 20px;
+            font-weight: 400 !important;
+        }
+        &-discription {
+            border-bottom: .5px solid $caption-color;
+            margin-bottom: 10px;
+            &-h6 {
+                color: $title-color;
+                font-family: 'Roboto';
+                font-size: 15px;
+                margin-top: 15px;
+            }
+            &-p {
+                font-size: 16px;
+                color: $caption-color;
+                margin-bottom: 15px;
+            }
+            &-btnwrapper {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding: 5px 15px 16px 16px;
+            }
+            &-btn1 {
+                width: 48%;
+                background-color: transparent;
+                outline: none;
+                border: 1px solid $caption-color;
+                color: $caption-color;
+                font-size: 16px;
+                padding: 5px 0;
+                font-family: 'Roboto';
+            }
+            &-btn2 {
+                width: 48%;
+                background-color: transparent;
+                outline: none;
+                border: 1px solid $dark-blue;
+                color: $dark-blue;
+                font-size: 16px;
+                padding: 5px 0;
+                font-family: 'Roboto';
+            }
+        }
+    }
+}
