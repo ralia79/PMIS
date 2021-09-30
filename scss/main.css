@@ -512,7 +512,10 @@ body {
 }
 
 .section2-right-item {
+  cursor: pointer;
   margin-top: 15px !important;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .section2-right-item-base {
@@ -579,6 +582,9 @@ body {
 .section2-left-discription {
   border-bottom: 0.5px solid #b1b0b0;
   margin-bottom: 10px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  cursor: pointer;
 }
 
 .section2-left-discription-h6 {
@@ -631,5 +637,186 @@ body {
   font-size: 16px;
   padding: 5px 0;
   font-family: 'Roboto';
+}
+
+.section3 {
+  padding-left: 20px;
+  margin-top: 20px;
+  padding-bottom: 100px;
+}
+
+.section3-header {
+  padding: 10px 0 15px 0 !important;
+  color: #565656;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 400 !important;
+}
+
+.section3-item {
+  width: 100%;
+  padding-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section3-item-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.section3-item-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.section3-item-third {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.section3-item-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 25px;
+}
+
+.section3-item-left-iconewrapper {
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section3-item-left-iconewrapper span {
+  color: #fff;
+  font-size: 20px;
+}
+
+.section3-item-left-line {
+  width: 2px;
+  height: 100px;
+  background-color: #2196F3;
+}
+
+.section3-item-right {
+  padding: 20px 20px;
+  width: 100%;
+  -webkit-box-shadow: 1px 1px 5px #b1b0b0;
+          box-shadow: 1px 1px 5px #b1b0b0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section3-item-right-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section3-item-right-header-h3 {
+  font-size: 15px;
+  color: #565656;
+  margin: 0;
+}
+
+.section3-item-right-header-p {
+  margin: 0;
+  margin-left: 10px !important;
+  font-size: 10px;
+  color: #b1b0b0;
+}
+
+.section3-item-right-description {
+  font-size: 15px;
+  color: #b1b0b0;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+.section3-item-right-details {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: -8px;
+}
+
+.section3-item-right-details span {
+  font-size: 15px;
+  color: #b1b0b0;
+}
+
+.section3-item-right-details p {
+  margin: 1px 22px 0 2px;
+  font-size: 13px;
+  color: #b1b0b0;
+}
+
+.bg-purple {
+  background-color: #9C27B0 !important;
+}
+
+.bg-orange {
+  background-color: #F57C00 !important;
 }
 /*# sourceMappingURL=main.css.map */
