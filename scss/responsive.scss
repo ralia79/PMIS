@@ -3,6 +3,32 @@
         justify-content: center !important;
         padding-top: 30px !important;
     }
+    .section3 {
+        max-width: 80%;
+    }
+    .section2 {
+        &-right {
+            &-item {
+                &-base {
+                    &-info {
+                        h4 {
+                            font-size: 16px !important;
+                        }
+                        p {
+                            font-size: 11px !important;
+                        }
+                    }
+                }
+                &-socialmedia {
+                    img {
+                        width: 16px;
+                        height: 16px;
+                        margin-left: 5px !important;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:768px) {
